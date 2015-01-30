@@ -21,6 +21,30 @@
 </tr>
 
 <tr>
+	<td><input type="text"  name="title"></td>
+	<td><input type="text"  name="price"></td>
+	<td><input type="text"  name="quantity"></td>
+	<td><input type="text"  name="description"></td>
+	<td><img src="{{asset('media/img/food.jpg')}}"></td>
+</tr>
+
+<tr>
+	<td><input type="text"  name="title"></td>
+	<td><input type="text"  name="price"></td>
+	<td><input type="text"  name="quantity"></td>
+	<td><input type="text"  name="description"></td>
+	<td><img src="{{asset('media/img/food.jpg')}}"></td>
+</tr>
+
+<tr>
+	<td><input type="text"  name="title"></td>
+	<td><input type="text"  name="price"></td>
+	<td><input type="text"  name="quantity"></td>
+	<td><input type="text"  name="description"></td>
+	<td><img src="{{asset('media/img/food.jpg')}}"></td>
+</tr>
+
+<tr>
 <td colspan="4"><input type="submit" value="Add Item"></td>
 </tr>
 </table>
