@@ -19,7 +19,7 @@ class BaseController extends Controller {
 		$this->title='Crafty';
 		$this->description='TestSite1';
 		$this->styles=array('media/css/reset.css','media/css/main_responsive.css', 'media/css/style_admin.css');
-		$this->scripts=array('media/js/jquery.js','media/js/carouFredSel.js', 'media/js/main.js');
+		$this->scripts=array('media/js/jquery.js','media/js/carouFredSel.js', 'media/js/main.js','media/js/admin.js');
 		$this->cabinet=false;
 		if(Auth::check()){
 			$this->cabinet=true;

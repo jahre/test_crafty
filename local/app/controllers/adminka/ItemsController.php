@@ -3,15 +3,14 @@
 class ItemsController extends AdminController {
 
 	public function getIndex(){
-		//return View::make('adminka.table');
         echo 'test';
 	}
 	public function postItems(){
 		
-		$item = new Item();
+		$product = new Product();
 		
-		$items=Item::all();
-		DB::table('items')->insert(
+		$products=Product::all();
+		DB::table('products')->insert(
             
             array('title'=>Input::get('title'),
 					'price'=>Input::get('price'),
@@ -20,7 +19,8 @@ class ItemsController extends AdminController {
 			)        
             
 		);
-        
-	
-        }
+		return Redirect::to('/adminka');
+		
+		
+}
 }

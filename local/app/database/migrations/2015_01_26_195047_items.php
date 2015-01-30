@@ -20,6 +20,7 @@ class Items extends Migration {
 
             $table->string("title", 255);
 
+            $table->text("price");
             $table->text("description");
 
             $table->timestamps();
