@@ -4,7 +4,7 @@
 
 
 <section>
-<form method="post" action="{{asset('adminka/products/items')}}">
+<form method="post" action="{{asset('adminka/products/0/items')}}">
 <table class="admin_table">
 <tr style="font-weight:bold;">
 	<td>Item</td>

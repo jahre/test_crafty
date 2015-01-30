@@ -3,7 +3,7 @@
 class ItemsController extends AdminController {
 
 	public function getIndex(){
-        echo 'test';
+        
 	}
 	public function postItems(){
 		
@@ -23,4 +23,16 @@ class ItemsController extends AdminController {
 		
 		
 }
+	public function getDelete($id){
+		
+	
+		DB::table('products')
+           ->where('id', '=', $id)
+		   ->delete();
+           
+		return Redirect::to('adminka/table');   
+            
+				
+}
+
 }

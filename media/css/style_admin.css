@@ -29,3 +29,17 @@ input[type="text"]{
 input[type="submit"]{
 	cursor:pointer;
 }
+.pag_container{
+	padding:20px 0;
+}
+
+.pagination{
+	width:100px;
+	display:block;
+	margin:0 auto;
+}
+
+.pagination li{
+	padding:0 20px;
+	display:inline;
+}

@@ -2,7 +2,7 @@
 @section('content')
 @include('adminka.admin-menu')
 
-<p align="center">{{$products->links()}}</p>
+<div class="pag_container">{{$products->links()}}</div>
 
 <section>
 
@@ -28,9 +28,7 @@
 @endforeach
 
 </table>
-<div style="background:#ccc;padding-left:20px;">{{$products->links()}}</div>
-
-
+<div class="pag_container">{{$products->links()}}</div>
 
 </section>
 @stop
