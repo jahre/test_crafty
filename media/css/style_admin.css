@@ -1,0 +1,31 @@
+
+
+.admin_table{
+	width: 50%;
+	margin: 0 auto;
+}
+
+.admin_table tr{
+	min-height:20px;
+}
+
+.admin_table tr:first-child{
+	background:#ccc;
+	font-size:20px;
+	border-bottom: 2px solid #333;
+	height:40px;
+}
+
+.admin_table tr td{
+	padding: 0px 10px;
+	border-bottom: 1px solid #ccc;
+	
+}
+
+input[type="text"]{
+	width:30px;
+}
+
+input[type="submit"]{
+	cursor:pointer;
+}
