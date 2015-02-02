@@ -22,6 +22,11 @@
 	
 }
 
+.admin_table tr td input[type="text"]{
+	width:100px;
+	
+}
+
 input[type="text"]{
 	width:30px;
 }

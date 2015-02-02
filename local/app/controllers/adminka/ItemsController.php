@@ -35,4 +35,24 @@ class ItemsController extends AdminController {
 				
 }
 
+	public function getShow($id){
+			
+			DB::table('products')->where('id', '=', $id)->update(
+			  array('showhide'=>1)
+			   );
+			return Redirect::to('adminka/table');   
+				
+					
+	}
+	
+	public function getHide($id){
+			
+			DB::table('products')->where('id', '=', $id)->update(
+			  array('showhide'=>0)
+			   );
+			return Redirect::to('adminka/table');   
+				
+					
+	}
+
 }
