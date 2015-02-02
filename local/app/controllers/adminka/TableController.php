@@ -70,6 +70,9 @@ class TableController extends AdminController {
 			DB::table('products')->insert(
 				array('title'=>$data['name'],
 					'img'=>$picture,
+					'price'=>$data['price'],
+					'quantity'=>$data['quantity'],
+					'description'=>$data['description'],
 					'created_at'=>date('y-m-d h:i:s'),
 					'updated_at'=>date('y-m-d h:i:s'),
 					'showhide'=>1

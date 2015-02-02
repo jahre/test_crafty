@@ -5,24 +5,7 @@
 <div class="pag_container">{{$products->links()}}</div>
 
 <section>
-<table class="admin_table">
-<tr style="font-weight:bold;">
-	<td>Add Image</td>
-</tr>
-<tr>
-<td>{{Form::open(array('url'=>'adminka/table/add', 'files'=>true))}}
-	{{Form::text('name', Input::old('name'), array())}}
-	{{Form::file('file')}}
-	{{Form::submit('ok')}}
-	{{Form::close()}}
-	</td>
-</tr>
-<tr>
-	<td>
-		<img src="{{asset('media/uploads/photos/')}}">
-	</td>
-</tr>
-</table>
+
 
 <table class="admin_table">
 <tr style="font-weight:bold;">
@@ -33,6 +16,18 @@
 	<td>Image</td>
 	<td>Delete Item</td>
 </tr>
+<tr>
+{{Form::open(array('url'=>'adminka/table/add', 'files'=>true))}}
+<td>{{Form::text('name', Input::old('name'), array('placeholder'=>'name'))}}</td>
+<td>{{Form::text('price', Input::old('price'), array('placeholder'=>'price'))}}</td>
+<td>{{Form::text('quantity', Input::old('quantity'), array('placeholder'=>'quantity'))}}</td>
+<td>{{Form::text('description', Input::old('description'), array('placeholder'=>'description'))}}</td>
+<td>{{Form::file('file')}}</td>
+<td>{{Form::submit('ok')}}</td>
+	{{Form::close()}}
+	</td>
+</tr>
+<tr>
 @foreach($products as $one)
 @if($one->showhide)
 	<?php $showhide='adminka/products/'.$one->id.'/hide'; 
