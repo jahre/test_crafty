@@ -23,6 +23,8 @@ class TableController extends AdminController {
         return View::make('adminka.table')->with('products', $products);
 	}
 	
+	//http://image.intervention.io/getting_started/installation
+	
 	protected function _img_edit($file, $cat){
 		$destinationPath='media/uploads/'.$cat.'/';
 		if(!$destinationPath){
