@@ -20,7 +20,7 @@
 	@foreach($scripts as $script)
 		{{HTML::script($script)}}
 	@endforeach
-    
+  
 </head>
 <body>
 

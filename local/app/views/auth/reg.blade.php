@@ -22,11 +22,11 @@
                 
 				<p>
                     <label for="username" class="uname" data-icon="u" > Your email or username </label>
-                    <input id="username" name="username" required="required" type="text" placeholder="mymail@mail.com"/>
+                    <input id="username" name="username" required="required" type="text" placeholder="mymail@mail.com" class="uname_input"/>
                 </p>
                 <p>
                     <label for="password" class="youpasswd" data-icon="p"> Your password </label>
-                    <input id="password" name="password" required="required" type="password" placeholder="eg. X8df!90EO" />
+                    <input id="password" name="password" required="required" type="password" placeholder="eg. X8df!90EO" class="uname_input" />
                 </p>
                 
                 <div class="submit_block">
@@ -43,17 +43,17 @@
                 <!--<h1> Sign up </h1>-->
 				<p>
                     <label for="username" class="uname" data-icon="u" >Username</label>
-                    <input id="username" name="username" required="required" type="text" placeholder="user"/>
+                    <input id="username" name="username" required="required" type="text" placeholder="user" class="uname_input"/>
                 </p>
 				
                 <p>
                     <label for="email" class="uname" data-icon="u" > Your email</label>
-                    <input id="email" name="email" required="required" type="text" placeholder="email"/>
+                    <input id="email" name="email" required="required" type="text" placeholder="email" class="uname_input"/>
                 </p>
 				
                 <p>
                     <label for="password" class="youpasswd" data-icon="p"> Your password </label>
-                    <input id="password" name="password" required="required" type="password" placeholder="eg. X8df!90EO" />
+                    <input id="password" name="password" required="required" type="password" placeholder="eg. X8df!90EO" class="uname_input"/>
                 </p>
                 
                 <div class="submit_block">

@@ -14,20 +14,27 @@
 	<td>Quantity</td>
 	<td>Description</td>
 	<td>Image</td>
-	<td>Delete Item</td>
+	<td>Action</td>
 </tr>
 <tr>
 {{Form::open(array('url'=>'adminka/table/add', 'files'=>true))}}
 <td>{{Form::text('name', Input::old('name'), array('placeholder'=>'name'))}}</td>
 <td>{{Form::text('price', Input::old('price'), array('placeholder'=>'price'))}}</td>
 <td>{{Form::text('quantity', Input::old('quantity'), array('placeholder'=>'quantity'))}}</td>
-<td>{{Form::text('description', Input::old('description'), array('placeholder'=>'description'))}}</td>
+<td>{{Form::textarea('description', Input::old('description'), array('placeholder'=>'description', 'class'=>'ckeditor', 'id'=>'editor1'))}}
+	<script>
+	// Replace the <textarea id="editor1"> with a CKEditor
+	// instance, using default configuration.
+	CKEDITOR.replace( 'editor1' );
+	</script>
+</td>
 <td>{{Form::file('file')}}</td>
 <td>{{Form::submit('ok')}}</td>
 	{{Form::close()}}
 	</td>
 </tr>
 <tr>
+
 @foreach($products as $one)
 @if($one->showhide)
 	<?php $showhide='adminka/products/'.$one->id.'/hide'; 

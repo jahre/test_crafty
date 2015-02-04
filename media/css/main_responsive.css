@@ -184,6 +184,9 @@ header ul.social li a.gplus{
     background-position: -72px 0;
 }
 
+.entered{
+	background:#ffb800;
+}
 
 
 
@@ -517,11 +520,16 @@ form p label{
     padding-bottom: 5px;
 }
 
-form p input{
+form p input, .uname_input{
     height: 25px;
     padding-left: 7px;
     width: 200px;
 }
+.uname_input{
+	width: 200px !important;
+}
+
+
 
 .submit_block{
     position: absolute;

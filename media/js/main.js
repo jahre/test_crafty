@@ -23,6 +23,10 @@ $(document).ready(function(){
         $("#nav_menu").toggleClass("show_menu");
         return false;
     });
+	
+	$('#nav_menu a:first').bind( "mouseenter mouseleave", function() {
+		$('header').toggleClass( "entered" );
+	});
 
 });
 
