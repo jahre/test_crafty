@@ -21,7 +21,7 @@
 <td>{{Form::text('name', Input::old('name'), array('placeholder'=>'name'))}}</td>
 <td>{{Form::text('price', Input::old('price'), array('placeholder'=>'price'))}}</td>
 <td>{{Form::text('quantity', Input::old('quantity'), array('placeholder'=>'quantity'))}}</td>
-<td>{{Form::textarea('description', Input::old('description'), array('placeholder'=>'description', 'class'=>'ckeditor', 'id'=>'editor1'))}}
+<td class="ck_td">{{Form::textarea('description', Input::old('description'), array('placeholder'=>'description', 'class'=>'ckeditor', 'id'=>'editor1'))}}
 	<script>
 	// Replace the <textarea id="editor1"> with a CKEditor
 	// instance, using default configuration.
@@ -37,12 +37,12 @@
 
 @foreach($products as $one)
 @if($one->showhide)
-	<?php $showhide='adminka/products/'.$one->id.'/hide'; 
+	<?php $showhide='adminka/products/'.$one->id.'/show'; 
 		$showhide_world='hide';
 	
 	?>
 @else
-	<?php $showhide='adminka/products/'.$one->id.'/show'; 
+	<?php $showhide='adminka/products/'.$one->id.'/hide'; 
 		$showhide_world='show';
 	?>
 	

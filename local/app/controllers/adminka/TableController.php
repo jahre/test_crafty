@@ -18,7 +18,7 @@ class TableController extends AdminController {
 				
 		$products = DB::table('products')
 			->orderBy('id', 'DESC')
-			->paginate(5);
+			->paginate(30);
 	
         return View::make('adminka.table')->with('products', $products);
 	}

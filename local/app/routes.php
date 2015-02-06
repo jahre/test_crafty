@@ -23,6 +23,9 @@ Route::group(array('before'=>'auth'), function(){
 	
 });
 
+Route::controller('products', 'ProductsController');
+Route::controller('ajax', 'AjaxController');
+
 Route::controller('auth', 'AuthController');
 
 
