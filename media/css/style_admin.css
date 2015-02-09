@@ -38,6 +38,20 @@ input[type="submit"]{
 	cursor:pointer;
 }
 
+.itog_table{
+	text-align:right;
+}
+
+.admin_menu a{
+	font-size:18px;
+	margin:20px;
+	font-family:Arial;
+}
+
+.delete_button{
+	position:relative;
+	left:120px;
+}
 
 .pag_container{
 	padding:20px 0;
@@ -56,14 +70,20 @@ input[type="submit"]{
 
 .tov{
 	float:left;
+	position:relative;
 	width:210px;
-	height:250px;
+	height:300px;
 	padding:5px;
 	border:1px solid #000;
 	box-shadow:1px 1px 1px #000;
 	margin:3px;
 	background:#fff;
 	text-align:center;
+}
+
+.colvo_container{
+	position:absolute;
+	bottom:20px;
 }
 
 .products{
@@ -99,4 +119,12 @@ input[type="submit"]{
 	left:0;
 	width:100%;
 	height:100%;
+}
+
+.checkout{
+	position:relative;
+	right:0px;
+}
+.checkout tr td input{
+	width:100px;
 }
