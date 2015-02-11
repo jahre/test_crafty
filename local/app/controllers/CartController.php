@@ -31,6 +31,25 @@ class CartController extends BaseController {
 		return Redirect::to('cart/index');
 	}
 	
+	public function postCheckout(){
+		
+		//$product = new Product();
+		
+		//$products=Product::all();
+		DB::table('checkout')->insert(
+            
+            array('name'=>Input::get('name'),
+					'phone'=>Input::get('phone'),
+					'address'=>Input::get('address'),
+					'serial'=>Input::get('serial')
+			)        
+            
+		);
+		//echo Input::get('serial');
+		return Redirect::to('cart/index');
+		
+		
+}
 	
 	
 }

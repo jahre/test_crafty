@@ -124,7 +124,41 @@ input[type="submit"]{
 .checkout{
 	position:relative;
 	right:0px;
+	width:90%;
+	margin:30px auto;
 }
-.checkout tr td input{
+.checkout tr td:first-child{
 	width:100px;
+}
+
+.checkout tr td input{
+	width:150px;
+	margin:5px 0;
+}
+.admin_table.orders_table tr:nth-child(odd){
+	background:#eeeeff;
+}
+.admin_table.orders_table tr:first-child{
+	background:#ccc;
+}
+	
+.orders_table tr td{
+	padding:20px 0px;
+	width:5%;
+}
+.user_order{
+	width:20%;
+}
+
+.user_order table{
+	
+}
+
+.user_order table tr{
+	background:none !important;
+	border-bottom: 1px solid #000 !important;
+	
+}
+.user_order table tr td{
+	padding:5px 30px;
 }

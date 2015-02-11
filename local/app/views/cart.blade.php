@@ -16,11 +16,13 @@
 	<td>Action</td>
 </tr>
 	<? $itogo=0; ?>
+	<?$arr=array();?>
 @foreach($_COOKIE as $key=>$value)
 	
 <tr>	
 	<? $key=(int)$key; ?>
 	@if($key>0)
+	<?$arr[$key]=$value?>
 	<? $tovs=Product::where('id', '=', $key)->first(); ?>
 	
 	<td>
@@ -61,12 +63,15 @@
 	
 		
 	<?$itogo+=$tovs->price * $_COOKIE[$key]?>
+	
 	@endif
 </tr>
 	
 	
-	
+
 @endforeach
+<?$serial=serialize($arr)?>
+
 <tr>
 	<td colspan="4"></td>
 	
@@ -78,7 +83,8 @@
 
 </table>
 <table class="checkout">
-	{{Form::open(array('url'=>'checkout'))}}
+	{{Form::open(array('url'=>'cart/checkout'))}}
+	<input value='<?=$serial?>' type='hidden' name='serial' >
 	<tr>
 		<td>Имя:</td>
 		<td>{{Form::text('name')}}</td>

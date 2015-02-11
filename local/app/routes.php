@@ -13,6 +13,7 @@
 
 Route::group(array('before'=>'admin'), function(){
 	Route::controller('adminka/table', 'TableController');
+	Route::controller('adminka/orders', 'OrdersController');
 	Route::controller('adminka/products/{id?}', 'ItemsController');
 	Route::controller('adminka', 'AdminController');
 });
